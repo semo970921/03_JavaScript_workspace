@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_JS 개요</title>
+
+    <style>
+        body{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>프로그래밍 언어</h1>
+
+    <pre>
+        <strong>프로그램 (program)</strong>
+            - 명령어의 나열(집합)
+        
+        <strong>프로그래밍 (programming)</strong>
+            - 명령어를 나열하는 것 == 명령어 작성
+             (== 코딩)
+        
+        <strong>프로그래머 (programer)</strong>
+            - 명령어를 작성하는 사람
+
+            (참고) 개발자(developer)
+            - 기획, 설계, 코딩, 테스트, 유지보수 등
+              개발과 관련된 모든 일을 하는 사람
+        
+        <strong>프로그래밍 언어 (programming language)</strong>
+            - 컴퓨터한테 명령어를 전달할 수 있는 언어
+
+            - 개발자가 알아볼 수 있는 형태로 작성
+              (프로그래밍 언어 별로 형태/규칙이  정해져 있음)
+
+              -> 컴퓨터가 해석할 수 있는 형태(2진법)로 변환
+                => 명령어를 연산/수행
+    </pre>
+
+    <hr>
+
+    <h3>Script 언어</h3>
+    <pre>
+        - 파이썬, JS, ...
+
+        - 기본 프로그램(브라우저)의 동작을
+          사용자의 요구에 맞게 수행되도록 해주는 언어
+          (즉, 브라우저가 어떻게 동작했으면 좋겠어~)
+
+        - 별도의 소스코드 컴파일(한 번에 이진법 변환)을 하지 않고
+          (일괄 번역)
+
+          인터프리터를 이용해 한 줄씩 번역, 수행하는 언어
+          (실시간 통역)
+        
+        - 장점 : 컴파일에 소요되는 시간이 없음
+
+        - 단점 : 프로그램 실행 시간이 상대적으로 느림
+
+    </pre>
+
+    <hr>
+
+    <h1>JavaScript</h1>
+
+    <pre>
+        웹 브라우저(크롬, 엣지, 웨일 등, ...)에서
+        주로 사용하는 인터프리터 방식의 객체 지향 프로그래밍 언어
+
+        ECMA(European Computer Manufacturers Association, 유럽 컴퓨터 제조업 협회, [에크마])
+        의 Script 표준을 따르는 대표적인 웹 기술
+        (JS 버전명 : ES5, ES6, ...)
+    </pre>
+
+    <hr>
+
+    <h1>JavaScript를 작성하는 방법</h1>
+
+    <ol>
+        <li>
+            브라우저 개발자 도구 -> Console에 입력하기
+            <br>
+            (JS 연습, 확인 등에 많이 사용하길 권장)
+            <!-- 개발자도구 확인
+             alert("메롱") 
+             document.querySelector("body").style.backgroundColor = 'pink'
+             100 + 200 * 3-->
+        </li>
+
+        <li>
+            HTML 문서 내부에 작성하는방법(Script 태그 이용)
+            -> Internal 방식
+
+            <br>
+
+            <!-- type="button" : 아무 기능 없는 버튼
+                        => JS를 이용하여 커스텀하면 됨 -->
+            
+            <!-- onclick : 클릭이 되었을 때 어떤 기능을 수행할지 지정하는 속성 
+             onclick="internalFn()" : 버튼이 클릭 되었을 때 internalFn 이라는 함수를 실행() 해라!!-->
+
+            <button type="button" onclick="internalFn()">클릭</button>
+
+            <script>
+                // 이 태그는 JS를 작성하는 영역
+
+                // Script 태그 : JavaScript를 작성하는 영역을 지정하는 태그
+
+                // function(함수) : 기능
+                function internalFn(){
+                    alert("버튼이 클릭 되었습니다!!!");
+                    alert("코드는 여러 줄 작성 가능!!!");
+                }
+            </script>
+        </li>
+
+        <li>
+            HTML 문서 외부에 존재하는 .js 파일을 연결해서 사용
+            -> External 방식
+
+            <pre>
+                1) 원하는 위치에 .js 파일을 생성
+                2) 연결을 원하는 HTML 파일 body 태그 제일 아랫쪽에
+                   Script 태그를 작성하고, src 속성 추가
+            </pre>
+
+            <button type="button" onclick="lightMode()">라이트 모드</button>
+            <button type="button" onclick="darkMode()">다크 모드</button>
+            <!-- js를 이용하여 CSS를 변경하면 inline-style로 적용된다!! => 우선순위-- 2순위-->
+        </li>
+
+        <li>
+            태그에 직접 JS 코드를 작성
+            -> inline 방식 (권장하지는 않음)
+
+            <br>
+
+            <button type="button"
+                onclick="console.log('버튼 클릭됨@@@')">inline 확인</button>
+        </li>
+
+
+    </ol>
+
+    <!-- 외부 JS파일 연결!! -->
+    <script src="../js/01_JS개요.js"></script>
+</body>
+</html>
