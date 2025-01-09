@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11_요소 접근 방법</title>
+
+    <link rel="stylesheet" href="../css/11_요소접근방법.css">
+</head>
+<body>
+
+    <h3>class를 이용한 요소(DOM 객체 접근 방법)</h3>
+    <button onclick="classTest()">배경색 변경</button>
+    <button onclick="classInit()">배경색 초기화(흰색)</button>
+
+    <div class="cls-test">red</div>
+    <div class="cls-test">orange</div>
+    <div class="cls-test">yellow</div>
+    <div class="cls-test">green</div>
+    <div class="cls-test">blue</div>
+    <div class="cls-test">navy</div>
+    <div class="cls-test">purple</div>
+
+
+    <hr>
+    <h3>input에 입력된 숫자들 모두 얻어와 합계 구하기</h3>
+    <div class="flex-container direction-column">
+        <input type="number" class="cls-input">
+        <input type="number" class="cls-input">
+        <input type="number" class="cls-input">
+        <input type="number" class="cls-input">
+        <input type="number" class="cls-input">
+
+        <h4>정답 : <span id="sumResult">0</span></h4>
+        <button onclick="classTest2()">합계 구하기</button>
+    </div>
+
+
+    <hr>
+    <h3>태그명으로 요소 접근하여 배경색 변경하기</h3>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+    <button onclick="tagNameTest()">배경색 변경</button>
+
+    <hr>
+    <h4>취미 선택하기</h4>
+    <table>
+        <tr>
+            <td>
+                <input type="checkbox" name="hobby" id="game" value="게임">
+                <label for="game">게임</label>
+            </td>
+            <td>
+                <input type="checkbox" name="hobby" id="music" value="음악감상">
+                <label for="music">음악감상</label>
+            </td>
+            <td>
+                <input type="checkbox" name="hobby" id="video" value="영상시청">
+                <label for="video">영상시청</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="checkbox" name="hobby" id="coding" value="코딩">
+                <label for="coding">코딩</label>
+            </td>
+            <td>
+                <input type="checkbox" name="hobby" id="book" value="독서">
+                <label for="book">독서</label>
+            </td>
+            <td>
+                <input type="checkbox" name="hobby" id="exercise" value="운동">
+                <label for="exercise">운동</label>
+            </td>
+        </tr>  
+    </table>
+
+    <div class="name-result">선택한 취미 출력</div>
+    <button onclick="nameTest()">선택한 취미만 출력하기</button>
+
+    <hr>
+    <h1>CSS 선택자를 이용한 요소 접근 방법</h1>
+
+    <!-- target-div="css-div" 라는 속성은 HTML의 기본 속성X => 만들어낸 속성 -->
+    <div target-div="css-div">
+        <div>test1</div>
+        <div>test2</div>
+    </div>
+
+    <button onclick="cssTest()">CSS 선택자를 이용한 요소 접근</button>
+
+    <hr>
+    <h3>카카오톡 모양의 채팅 화면 만들기</h3>
+    <div class="chatting">
+        <div id="chattingBg">
+            <p>
+                <span>입력된 채팅1</span>
+            </p>
+            <p>
+                <span>입력된 채팅2</span>
+            </p>
+            <p>
+                <span>입력된 채팅3</span>
+            </p>
+        </div>
+
+        <div id="chattingInput">
+            <input type="text" id="userInput">
+            <button onclick="readValue()">입력</button>
+        </div>
+    </div>
+
+    <script src="../js/11_요소접근방법.js"></script>
+</body>
+</html>

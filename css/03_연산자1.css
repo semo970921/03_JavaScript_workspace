@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    /* m0 + 엔터, p0 + 엔터 */
+    margin: 0;
+    padding: 0;
+}
+
+.calculator{
+    width: 300px;
+    min-height: 150px;
+
+    border: 3px solid black;
+    margin: auto; /* 화면 가운데 배치 */
+    padding : 15px;
+    border-radius: 10px;
+}
+
+.row{ /* 행마다 5px씩 떨어트림 */
+    margin: 5px 0;
+}
+
+.btn-row{
+    display: flex;
+    justify-content: space-evenly; /* 적당한 간격으로 떨어트림 */
+}
+
+.btn-row > button{
+    width: 45px;
+    font-size: 18px;
+}
+
+#calcResult{
+    color: red;
+}
+
+.btn2 > button{
+    font-size: 10px;
+
+    /* 글자 간격 */
+    letter-spacing: -1px;
+    width: 33.33%;
+}

@@ -1,0 +1,101 @@
+.cls-test{
+    width: 400px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+/* =========================== */
+.flex-container{
+    display: flex;
+    width: 300px;
+}
+
+.direction-column{
+    flex-direction: column;
+}
+
+/* =========================== */
+
+/* rgb(r, g, b) : 빛의 삼원색을 섞어서 색상을 생성
+                  r, g, b의 범위는 0~255
+*/
+
+li{
+    width: 300px;
+    background-color: rgb(200, 200, 200);
+
+}
+
+/* =========================== */
+
+.name-result{
+    width: 300px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+/* =========================== */
+
+/* 카카오톡 모양의 채팅 만들기 */
+/* .chatting과 하위 모든 요소 선택 */
+.chatting, .chatting *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* 채팅 전체를 감싸는 요소 */
+.chatting{
+    width: 360px;
+    border: 1px solid black;
+    margin: 50px 20px;
+}
+
+/* 채팅 출력 화면 */
+#chattingBg{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(178, 199, 217);
+    padding: 5px 0;
+
+    /* 
+    overflow : 내부 요소가 감싸는 요소를 넘어 갔을 때에 대한 속성 
+    - hidden : 넘어간 요소 숨김
+    - auto : 평소에는 기본 상태, 넘어가면 스크롤 추가
+    */
+    overflow: auto;
+}
+
+/* 채팅 내용 출력 영역 */
+#chattingBg > p{
+    padding: 5px;
+    margin: 0 10px 20px; /* 상/좌우/하 */
+    text-align: right; /* text 오른쪽 정렬 */
+}
+
+/* 채팅 말풍선 */
+#chattingBg > p > span{
+    background-color: rgb(254, 234, 51);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* 입력 영역 */
+#chattingInput{
+    width: 100%;
+    height: 22px;
+    display: flex;
+    
+}
+
+#chattingInput > input{
+    height: 100%;
+    flex-grow: 1;
+    outline: none; /* 클릭 시 보이는 테두리 삭제 => input한테만 있음*/
+    padding-left: 5px;
+}
+
+#chattingInput > button{
+    height: 100%;
+    width: 10%;
+}
