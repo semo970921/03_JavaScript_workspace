@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03_연산자1</title>
+    <link rel="stylesheet" href="../css/03_연산자1.css">
+</head>
+<body>
+    <h3>산술 연산자</h3>
+    <div class="calculator">
+        <div class="row">
+            <!-- label의 for : 같은 id를 가지는 input 태그의 제목이 되겠다 -->
+            <label for="input1">첫 번째 값</label>
+            <input type="number" id="input1">
+        </div>
+
+        <div class="row">
+            <label for="input2">두 번째 값</label>
+            <input type="number" id="input2">
+        </div>
+
+        <div class="row btn-row">
+            <!-- 
+            buttom 태그의 type 기본값은 "submit"
+            -> form 태그로 감싸져 있지 않으면 제출 효과X
+            (form 밖에 있으면 그냥 일반 버튼)
+            -->
+            <button onclick="plusFn()">+</button>
+            <button onclick="minusFn()">-</button>
+            <button onclick="multiFn()">*</button>
+            <button onclick="divFn()">/</button>
+            <button onclick="modFn()">%</button>
+        </div>
+
+        <div class="row">
+            <h2>
+                결과 : <span id="calcResult">0</span>
+            </h2>
+        </div>
+    </div>
+
+    <hr>
+
+    <h3>산술 연산자 응용</h3>
+    <div class="calculator">
+        <div class="row">
+            <label for="input3">첫 번째 값</label>
+            <input type="number" id="input3">
+        </div>
+
+        <div class="row">
+            <label for="input4">두 번째 값</label>
+            <input type="number" id="input4">
+        </div>
+
+        <div class="row btn-row btn2">
+            <button onclick="doubleFn()">첫 번째 값 x2</button>
+            <button onclick="squareFn()">두 번째 값 제곱</button>
+            <button onclick="allOperationFn()">모든 산술 연산 결과 일괄 출력</button>
+        </div>
+
+        <div class="row">
+            <h2>
+                결과 : <span id="calcResult2">0</span>
+            </h2>
+        </div>
+    </div>
+
+    <hr>
+
+    <h1>증가/감소 연산자(++, --)</h1>
+    <div>
+        <button onclick="decrease()">-1</button>
+        <span id="countResult">0</span>
+        <button onclick="increase()">+1</button>
+    </div>
+
+    
+    <script src="../js/03_연산자1.js"></script>
+</body>
+</html>
