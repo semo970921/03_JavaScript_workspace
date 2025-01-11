@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04_연산자2</title>
+</head>
+<body>
+    <h3>비교 연산자</h3>
+
+    <button onclick="check1()">비교 연산자 확인</button>
+
+    <h3>
+        %(나머지), 비교 연산자를 이용해서
+        홀짝 판별기/배수, 약수 판별기 만들기
+    </h3>
+
+    <h4>홀짝 판별기</h4>
+    숫자 입력 : <input type="number" id="input1">
+    <button onclick="oddEvenCheck()">홀짝 확인</button>
+
+    <hr>
+    <h4>배수 판별기</h4>
+    <input type="number" id="input2">
+    은/는
+    <input type="number" id="input3">
+    의 배수가 맞는가?
+    <br>
+    <span id="result2"></span>
+    <br>
+    <button onclick="multipleCheck()">배수 확인</button>
+
+    <hr>
+    <h3>복합 대입 연산자 (+=, -=, *=, /=, %=)</h3>
+    <button onclick="compoundCheck()">복합 대입 연산</button>
+
+    <h1>논리 연산자(&&, ||, !)</h1>
+
+    <button onclick="andCheck()">AND 연산자 확인</button>
+    <button onclick="orCheck()">or 연산자 확인</button>
+    <script src="../js/04_연산자2.js"></script>
+</body>
+</html>
