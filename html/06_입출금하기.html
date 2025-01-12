@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06_입출금 하기</title>
+
+    <link rel="stylesheet" href="../css/06_입출금하기.css">
+</head>
+<body>
+    <h1>입/출금 하기</h1>
+    <pre>
+        변수 선언 및 대입
+        - const amount = [빈칸 작성];  // 금액 입력 input
+        - let balance = 10000;         // 잔액 기록 변수(초기값 10000)
+        - const password = '1234';     // 빕\밀번호 저장 변수(초기 비번 1234)
+
+        함수 작성
+        1. 입금 -> function deposit(){}
+        * 입금 버튼 클릭시
+          input에 입력된 금액 만큼 잔액(balance)에 추가
+
+        2. 출금 -> function withdrawal(){}
+        * 출금 버튼 클릭 시 prompt를 이용해 비밀번호를 입력 받기
+
+        * 비밀번호가 일치할 경우
+        1) 출금할 금액이 잔액(balance) 보다 큰 경우 
+          -> alert("출금 금액이 잔액보다 클 수 없습니다") 출력
+        
+        2) 출금할 금액이 잔액(balance) 보다 작거나 같은 경우
+          -> 잔액(balance)에서 출금 금액만큼 감소 시킨 후
+            alert("OOO원이 출금 되었습니다. 남은 잔액 : OOO원") 출력
+  
+      * 비밀번호가 일치하지 않을 경우
+        -> alert("비밀번호가 일치하지 않습니다") 출력  
+    </pre>
+
+    <div class="account">
+        <div class="row">
+            <h1>잔액 : <span id="output"></span>원</h1>
+        </div>
+
+        <div class="row input-row">
+            <label for="amount">금액: </label>
+            <input type="number" id="amount">
+            <span>원</span>
+        </div>
+
+        <div class="row btn-row">
+            <button class="deposit-btn" onclick="deposit()">입금</button>
+            <button class="withdrawal-btn" onclick="withdrawal()">출금</button>
+        </div>
+
+    </div>
+    <script src="../js/06_입출금하기.js"></script>
+</body>
+</html>
