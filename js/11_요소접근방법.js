@@ -128,7 +128,6 @@ function cssTest(){
     }
 }
 
-
 /** 카카오톡 모양의 채팅 만들기 */
 function readValue(){
 
