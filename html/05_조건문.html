@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_조건문</title>
+</head>
+<body>
+    <h1>조건문</h1>
+    <h3>if 문</h3>
+    <h4>입력 받은 수가 양수(0보다 큰 수)인지 확인</h4>
+    <input type="number" id="input1">
+    <button onclick="check1()">양수인지 검사</button>
+
+    <h4>1~100 사이의 난수를 발생 시켜 홀/짝 판별하기</h4>
+    <button onclick="check2()">난수 홀/짝 확인</button>
+
+
+    <h4>양수, 음수, 0 판별기</h4>
+    <input type="number" id="input3">
+    <button onclick="check3()">양수, 음수, 0 판별하기</button>
+
+    <h4>(실습 문제) 어린이, 청소년, 성인 구분하기</h4>
+    <pre>
+        나이를 입력 받아
+        0 ~ 13세 : 어린이
+        14 ~ 19세 : 청소년
+        20 ~ 120세 : 성인
+        0미만, 120 초과 : 잘못 입력 하셨습니다.
+
+        메시지를 alert()를 이용해서 출력
+    </pre>
+
+    나이 : <input type="number", id="inputAge">
+    <button onclick="ageCheck()">확인</button>
+
+    <hr>
+    <h3>Early Return</h3>
+
+    <h4>두 수 A,B를 입력 받아 A가 B의 배수가 맞는지 확인</h4>
+    <pre>
+        [조건]
+        1) A, B 중 하나라도 입력되지 않을 경우
+            -> "입력되지 않은 값이 존재합니다"
+
+        2) A가 B보다 작을 경우
+            -> A가 B보다 작습니다
+
+        3) A가 B보다 클 경우
+            -> 배수 판별 수행
+    </pre>
+
+    <div>
+        A : <input type="number" id="inputA">
+        <br>
+        B : <input type="number" id="inputB">
+        <br>
+        <button onclick="check4()">배수 판별</button>
+    </div>
+
+
+    <hr>
+    <h1>switch, case, default</h1>
+
+    <h3>입력된 수가 3,4,5가 맞는지 확인</h3>
+    <input type="number" id="input5">
+    <button onclick="check5()">확인</button>
+
+    <hr>
+    <h3>switch문을 이용한 계산기</h3>
+    <div>
+        <div>
+            첫 번째 값 <input type="number" id="number1">
+        </div>
+        <div>
+            두 번째 값 <input type="number" id="number2">
+        </div>
+        <div>
+            <!-- 전달 인자 이용하기 -->
+             <button onclick="calc('+')">+</button>
+             <button onclick="calc('-')">-</button>
+             <button onclick="calc('*')">*</button>
+             <button onclick="calc('/')">/</button>
+             <button onclick="calc('%')">%</button>
+             <button onclick="calc('@')">@</button>
+        </div>
+        <h2>
+            결과 : <span id="calcResult">0</span>
+        </h2>
+    </div>
+
+    <hr>
+    <h3>입력 받은 월(달)의 알맞은 계절 출력(break; 관련 예제)</h3>
+    <input type="number", id="input6">
+    <button onclick="check6()">계절 확인</button>
+
+    <script src="../js/05_조건문.js"></script>
+</body>
+</html>
