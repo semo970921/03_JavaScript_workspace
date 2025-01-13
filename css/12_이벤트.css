@@ -1,0 +1,28 @@
+/* 커스텀 버튼 */
+.my-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    border: 3px solid rgb(53, 156, 252);
+    border-radius: 10px;
+
+    color: rgb(53, 156, 252);
+    font-weight: bold;
+    font-family: "고딕";
+
+    cursor: pointer; /* 포인터 손가락 모양 */
+
+    /* 버튼 막 클릭하면 블럭 처리되는거 막게 */
+    user-select: none; /* 선택(블럭) 불가 */
+}
+
+.my-btn:hover{ /* 마우스 올렸을 때 */
+    color: white;
+    background-color: rgb(53, 156, 252);
+}
+
+.my-btn:active{ /* 클릭하고 있을 때 */
+    scale: 0.98; /* 크기 변경 */
+}
