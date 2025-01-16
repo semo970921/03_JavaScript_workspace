@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container{
+    width: 500px;
+    margin: 50px auto;
+  }
+
+  .key-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border: 3px solid black;
+  }
+
+  .key{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin : 10px 0;
+  
+    font-size: 30px;
+    font-weight: bold;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    user-select : none;
+  
+    /* 배경 이미지 크기 맞춤, 가운데 정렬 */
+    background-size: cover;
+    background-position: center;
+  }
+
+/* 마우스 따라다니는 이미지 */
+#cursorImage{
+    width: 50px;
+    position: absolute; /* 다른 요소와 겹치기 가능 */
+    left: -500px; /* 화면 밖에 숨겨두기 */
+}
