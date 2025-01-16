@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12_이벤트</title>
+
+    <link rel="stylesheet" href="../css/12_이벤트.css">
+</head>
+<body>
+    
+    <h1>Event(이벤트)</h1>
+     
+    <h3>인라인 이벤트 모델(Inline)</h3>
+
+    <div class="my-btn" onclick="check1(this)">
+        인라인 이벤트 모델 확인
+    </div>
+
+    <hr>
+    <h3>고전 이벤트 모델</h3>
+
+    <button id="testA">고전 이벤트 모델 확인</button>
+    <button id="testB">고전 이벤트 모델 제거</button>
+    <button id="testC">고전 이벤트 모델 단점 확인</button>   
+
+    <hr>
+    <h1>표준 이벤트 모델(요소.addEventListener())</h1>
+
+    <h3>클릭할 수록 투명 + 클릭 횟수 증가</h3>
+    <div id="test1">0</div>
+
+    <hr>
+    <h3>클릭한 버튼에 작성된 색으로 배경색 변경하기</h3>
+    <div class="test2">
+        <!--  배경색이 변경될 영역 -->
+        <div id="result2"></div>
+
+        <div class="btn-container">
+            <button>red</button>
+            <button>brown</button>
+            <button>orange</button>
+            <button>yellow</button>
+            <button>green</button>
+            <button>skyblue</button>
+            <button>blue</button>
+            <button>navy</button>
+            <button>purple</button>
+            <button>violet</button>
+            <button>gold</button>
+            <button>white</button>
+        </div>
+    </div>
+
+    <script src="../js/12_이벤트.js"></script>
+</body>
+</html>
