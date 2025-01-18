@@ -40,9 +40,9 @@ checkBtn2.addEventListener("click",() => {
 
     console.log("children : ", parent.children);
 
-    console.log("firstElementChild : ", parent.firstsElementChild);
+    console.log("firstElementChild : ", parent.firstElementChild);
     console.log("lastElementChild : ", parent.lastElementChild);
 
-    console.log(parent.children[1].previosElementSibling)
+    console.log(parent.children[1].previousElementSibling);
     console.log(parent.children[1].nextElementSibling);
-})
+});
