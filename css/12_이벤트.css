@@ -74,3 +74,31 @@
     margin: 5px 0;
 
 }
+
+
+/* 버튼 클릭시 input 요소에 작성된 색상 값 얻어와 배경색 변경하기 */
+.container, .comtainer *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{display: flex;}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+}
+
+.display{
+    width: 120px;
+    height: 120px;
+    border-bottom: 1px solid gray;
+}
+
+.inputColor{
+    width: 120px;
+    border: none;
+    padding: 2px;
+}
