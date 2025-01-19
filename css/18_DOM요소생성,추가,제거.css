@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    border: 1px solid black;
+}
+
+.container{
+    width: 502px;
+    height: 302px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+
+    /* 내용이 요소를 넘어가면 자동 줄바꿈 */
+    word-break: break-all;
+}
