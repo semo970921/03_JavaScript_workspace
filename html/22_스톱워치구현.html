@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22_스톱워치</title>
+    <link rel="stylesheet" href="../css/22_스톱워치구현.css">
+</head>
+<body>
+    
+    <main>
+        <h1>STOP WATCH</h1>
+    
+        <!-- 시계(분:초.00 ) -->
+        <div id="display">
+          <span>00</span> <!-- 분 -->
+          :
+          <span>00</span> <!-- 초 -->
+          .
+          <span>00</span> <!-- 1/100초 -->
+        </div>
+    
+        <div class="btn-container">
+          <button id="startBtn">START</button>   <!-- 시작/일시정지 -->
+          <button id="recordBtn" disabled>RECORD</button> <!-- 현재 시간 기록 -->
+          <button id="resetBtn">RESET</button>   <!-- 초기화 -->
+        </div>
+    
+        <ul id="recordContainer">
+          <!-- 
+          <li>00 : 04 . 00</li>
+          <li>00 : 03 . 00</li>
+          <li>00 : 02 . 00</li>
+          <li>00 : 01 . 00</li>
+          <li>00 : 00 . 00</li> -->
+        </ul>
+
+    <script src="../js/22_스톱워치구현.js"></script>
+</body>
+</html>
